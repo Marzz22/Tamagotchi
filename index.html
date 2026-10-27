@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-  <title>Tamagotchi Cinta - Virtual Pet Interaktif</title>
+  <title>Tamagotchi - Virtual Pet Interaktif</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
 
@@ -145,7 +145,7 @@
       <div class="flex items-center justify-between mb-4 mt-2 px-2">
         <div class="flex items-center space-x-2">
           <span class="text-2xl">💖</span>
-          <h1 class="font-fredoka text-xl text-amber-300 tracking-wide">TAMAGOTCHI CINTA</h1>
+          <h1 class="font-fredoka text-xl text-amber-300 tracking-wide">TAMAGOTCHI</h1>
         </div>
         <div class="flex items-center gap-2">
           <!-- Real-time Clock Display -->
@@ -323,7 +323,7 @@
       <div class="mt-3 flex gap-2">
         <button onclick="openVoucherModal()" class="w-full bg-amber-400 hover:bg-amber-500 text-slate-900 font-fredoka py-2.5 px-3 rounded-2xl retro-border retro-shadow retro-btn text-xs sm:text-sm flex items-center justify-center gap-2">
           <span>💌</span>
-          <span>Voucher Manja Pasangan</span>
+          <span>Voucher Anu</span>
         </button>
       </div>
 
@@ -338,7 +338,7 @@
 
     <!-- Footer Copyright Note -->
     <p class="text-center text-xs font-bold text-slate-300 mt-4">
-      Dibuat khusus dengan ❤️ untuk pacar tersayang
+      Dibuat khusus dengan ❤️
     </p>
 
   </div>
@@ -351,9 +351,9 @@
         <button onclick="closeModal('modal-food')" class="text-lg font-bold">✕</button>
       </div>
       <div class="grid grid-cols-2 gap-3">
-        <button onclick="feedPet('seblak')" class="bg-rose-50 hover:bg-rose-100 p-3 rounded-2xl retro-border text-left retro-btn flex flex-col">
+        <button onclick="feedPet('Mie Pedas')" class="bg-rose-50 hover:bg-rose-100 p-3 rounded-2xl retro-border text-left retro-btn flex flex-col">
           <span class="text-3xl mb-1">🌶️</span>
-          <span class="font-bold text-xs text-[#0b1329]">Seblak Pedas</span>
+          <span class="font-bold text-xs text-[#0b1329]">Mie Pedas</span>
           <span class="text-[10px] text-slate-500">+12 Kenyang, +4 Mood</span>
         </button>
 
@@ -431,7 +431,7 @@
   <div id="modal-voucher" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4">
     <div class="bg-white retro-border retro-shadow-lg rounded-3xl p-5 w-full max-w-sm sm:max-w-md max-h-[85vh] max-h-[85dvh] overflow-y-auto">
       <div class="flex justify-between items-center mb-3">
-        <h2 class="font-fredoka text-lg text-[#0b1329]">💌 Voucher Manja Pasangan</h2>
+        <h2 class="font-fredoka text-lg text-[#0b1329]">💌 Voucher Anu</h2>
         <button onclick="closeModal('modal-voucher')" class="text-lg font-bold">✕</button>
       </div>
       <p class="text-xs text-slate-600 font-medium mb-4">Penuhi syarat stat pet untuk bisa mengklaim vouchernya! 😉</p>
@@ -1037,7 +1037,7 @@
       if (type === 'seblak') {
         petState.kenyang = Math.min(100, petState.kenyang + 12);
         petState.mood = Math.min(100, petState.mood + 4);
-        setSpeech("Pedas mantap! Makasih seblaknya sayang! 🌶️😋");
+        setSpeech("Pedas mantap! Makasih Mie Pedasnya sayang! 🌶️😋");
       } else if (type === 'boba') {
         petState.kenyang = Math.min(100, petState.kenyang + 8);
         petState.mood = Math.min(100, petState.mood + 10);
